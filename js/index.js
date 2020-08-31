@@ -70,11 +70,9 @@ midImg.setAttribute('src', 'img/mid-page-accent.jpg')
 
 
 
-const topText = document.querySelectorAll('.text-content h4')
-  topText.forEach((string, ind) =>{
-    string.textContent = siteContent['main-content'][`${[ind + 1]}-h4`]
-   
-},0)
+const paragraph = document.querySelectorAll('.top content .text-content p')
+ const reallArrayOfPara = Array.from(paragraph)
+ console.log(reallArrayOfPara)
 
 
 
