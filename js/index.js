@@ -69,19 +69,23 @@ console.log(midImg)
 midImg.setAttribute('src', 'img/mid-page-accent.jpg')
 
 
+let h4 = document.querySelectorAll('h4')
+h4[0].textContent = siteContent['main-content']['features-h4']
 
 const paragraph = document.querySelectorAll('.top content .text-content p')
- const reallArrayOfPara = Array.from(paragraph)
- console.log(reallArrayOfPara)
+console.log(paragraph)
+paragraph.forEach((string, ind)=> {
+        string.textContent = siteContent.main-content
+        
+        
+  },0)
 
-
-
-// const contactList = document.querySelectorAll('.contact h4') 
-//     contactList.forEach((link, ind)=> {
-//       link.textContent = siteContent.contact
-//       console.log(contactList)
+const contactList = document.querySelectorAll('.top contact h4') 
+    contactList.forEach((link, ind)=> {
+      link.textContent = siteContent.contact
+      console.log(contactList)
       
-// },0)
+},0)
 
 
 const footer = document.querySelector('footer')
