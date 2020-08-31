@@ -53,7 +53,7 @@ const allLinks = document.querySelectorAll('a')
 
 const h1 = document.querySelector('h1')
 console.log(h1)
-h1.textContent = ' DOM is Awesome'
+h1.innerHTML = 'DOM <br>is<br> Awesome'
 
 const img1 = document.querySelector('#cta-img')
 console.log(img1)
@@ -69,21 +69,21 @@ console.log(midImg)
 midImg.setAttribute('src', 'img/mid-page-accent.jpg')
 
 
-// const h4s = document.querySelectorAll('main-content')
-//   h4s.forEach((text, ind) =>{
-//     text.textContent = siteContent.main-content[`${[ind + 1]}-h4`] 
-//   },0)
 
-
-// const topText = document.querySelectorAll('.top-content')
-//   topText.forEach((text, ind) =>{
-//     text.textContent = siteContent.main-content[`${[ind+ 1]}-h4`]
-
-// })
+const topText = document.querySelectorAll('.text-content h4')
+  topText.forEach((string, ind) =>{
+    string.textContent = siteContent['main-content'][`${[ind + 1]}-h4`]
+   
+},0)
 
 
 
-
+// const contactList = document.querySelectorAll('.contact h4') 
+//     contactList.forEach((link, ind)=> {
+//       link.textContent = siteContent.contact
+//       console.log(contactList)
+      
+// },0)
 
 
 const footer = document.querySelector('footer')
