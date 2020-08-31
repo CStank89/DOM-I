@@ -38,5 +38,53 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
+let logo = document.getElementById("logo-img")
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let nav = document.querySelector('nav')
+nav.id= 'nav'
+
+const allLinks = document.querySelectorAll('a') 
+    allLinks.forEach((link, ind)=> {
+      link.textContent = siteContent.nav[`nav-item-${[ind + 1]}`]
+      
+},0)
+
+
+const h1 = document.querySelector('h1')
+console.log(h1)
+h1.textContent = ' DOM is Awesome'
+
+const img1 = document.querySelector('#cta-img')
+console.log(img1)
+img1.setAttribute('src', '/img/header-img.png')
+
+
+const button = document.querySelector('button')
+console.log(button)
+button.textContent = ' Get Started'
+
+const midImg = document.querySelector('#middle-img')
+console.log(midImg)
+midImg.setAttribute('src', 'img/mid-page-accent.jpg')
+
+
+// const h4s = document.querySelectorAll('main-content')
+//   h4s.forEach((text, ind) =>{
+//     text.textContent = siteContent.main-content[`${[ind + 1]}-h4`] 
+//   },0)
+
+
+// const topText = document.querySelectorAll('.top-content')
+//   topText.forEach((text, ind) =>{
+//     text.textContent = siteContent.main-content[`${[ind+ 1]}-h4`]
+
+// })
+
+
+
+
+
+
+const footer = document.querySelector('footer')
+footer.textContent = "Copyright Great Idea! 2018"
