@@ -38,5 +38,51 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
+let logo = document.getElementById("logo-img")
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let nav = document.querySelector('nav')
+nav.id= 'nav'
+
+const allLinks = document.querySelectorAll('a') 
+    allLinks.forEach((link, ind)=> {
+      link.textContent = siteContent.nav[`nav-item-${[ind + 1]}`]
+      
+},0)
+
+
+const h1 = document.querySelector('h1')
+console.log(h1)
+h1.innerHTML = 'DOM <br>is<br> Awesome'
+
+const img1 = document.querySelector('#cta-img')
+console.log(img1)
+img1.setAttribute('src', '/img/header-img.png')
+
+
+const button = document.querySelector('button')
+console.log(button)
+button.textContent = ' Get Started'
+
+const midImg = document.querySelector('#middle-img')
+console.log(midImg)
+midImg.setAttribute('src', 'img/mid-page-accent.jpg')
+
+
+
+const paragraph = document.querySelectorAll('.top content .text-content p')
+ const reallArrayOfPara = Array.from(paragraph)
+ console.log(reallArrayOfPara)
+
+
+
+// const contactList = document.querySelectorAll('.contact h4') 
+//     contactList.forEach((link, ind)=> {
+//       link.textContent = siteContent.contact
+//       console.log(contactList)
+      
+// },0)
+
+
+const footer = document.querySelector('footer')
+footer.textContent = "Copyright Great Idea! 2018"
