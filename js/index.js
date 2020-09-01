@@ -69,8 +69,19 @@ console.log(midImg)
 midImg.setAttribute('src', 'img/mid-page-accent.jpg')
 
 
-let h4 = document.querySelectorAll('h4')
-h4[0].textContent = siteContent['main-content']['features-h4']
+
+// const midSecTitles = document.getElementsByTagName("h4")
+// midSecTitles[0].textContent = siteContent['main-content']['features-h4']
+// midSecTitles[1].textContent = siteContent['main-content']['about-h4']
+// midSecTitles[2].textContent = siteContent['main-content']['services-h4']
+// midSecTitles[3].textContent = siteContent['main-content']['product-h4']
+// midSecTitles[4].textContent = siteContent['main-content']['vision-h4']
+// const midSecText = document.getElementsByTagName('p')
+// midSecText[0].textContent = siteContent['main-content']['features-content']
+// midSecText[1].textContent = siteContent['main-content']['about-content']
+// midSecText[2].textContent = siteContent['main-content']['services-content']
+// midSecText[3].textContent = siteContent['main-content']['product-content']
+// midSecText[4].textContent = siteContent['main-content']['vision-content']
 
 const paragraph = document.querySelectorAll('.top content .text-content p')
 console.log(paragraph)
